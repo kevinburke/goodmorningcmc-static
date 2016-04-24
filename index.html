@@ -80,7 +80,6 @@
 
                   <!-- Begin MailChimp Signup Form -->
                   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.2.6/jquery.min.js"></script>
-                  <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
                   <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script>
                   <script type="text/javascript">
                     // delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
@@ -88,7 +87,7 @@
                     var mc_custom_error_style = '';
                   </script>
                   <div id="mc_embed_signup">
-                    <form action="http://kburke.us1.list-manage.com/subscribe/post?u=2c913f03099b6ba1915c7f8d9&id=2f72f64ad3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                    <form action="http://kburke.us1.list-manage.com/subscribe/post?u=2c913f03099b6ba1915c7f8d9&id=2f72f64ad3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank">
                       <fieldset>
 
                         <div class="mc-field-group">
@@ -116,7 +115,7 @@
                     var mce_jQuery = jQuery.noConflict();
                     mce_jQuery(document).ready( function($) {
                       var options = { errorClass: 'mce_inline_error', errorElement: 'div', errorStyle: err_style, onkeyup: function(){}, onfocusout:function(){}, onblur:function(){}  };
-                      var mce_validator = mce_jQuery("#mc-embedded-subscribe-form").validate(options);
+                      var mce_validator = mce_jQuery("#mc-embedded-subscribe-form");
                       options = { url: 'http://kburke.us1.list-manage.com/subscribe/post-json?u=2c913f03099b6ba1915c7f8d9&id=2f72f64ad3&c=?', type: 'GET', dataType: 'json', contentType: "application/json; charset=utf-8",
                         beforeSubmit: function(){
                           mce_jQuery('#mce_tmp_error_msg').remove();
